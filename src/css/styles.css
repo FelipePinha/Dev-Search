@@ -1,0 +1,150 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #001c40;
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+
+main {
+    width: 50%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+header .theme {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+form {
+    width: 100%;
+}
+
+form .input-dev-container {
+    position: relative;
+    background-color: #29457E;
+    border-radius: 10px;
+}
+
+form .input-dev {
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    background: transparent;
+    color: #fff;
+
+    border: none;
+    outline: none;
+}
+
+form .input-dev::placeholder {
+    color: #fff;
+}
+
+form img {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+
+form .submit-btn {
+    position: absolute;
+    right: 2%;
+    top: 17%;
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #0275d8;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+form .submit-btn:hover {
+    opacity: .8;
+}
+
+
+.content {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #29457E;
+
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content .profile-info {
+    display: flex;
+    column-gap: 20px;
+}
+
+.content .profile-info .profile-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .profile-info .icon-container {
+    width: 92px;
+    height: 92px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .bio {
+    padding: 20px;
+    height: 90px;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.content .profile-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #001c40;
+    font-size: 20px;
+}
+
+.content .links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.content .links .link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.content .links .link a {
+    color: #fff;
+}
