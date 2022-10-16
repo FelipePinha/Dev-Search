@@ -25,7 +25,7 @@
             </div>
         </header>
 
-        <form>
+        <form id="form">
             <div class="input-dev-container">
                 <input 
                     type="text" 
@@ -46,21 +46,25 @@
         <div class="content">
             <div class="profile-info">
                 <div class="icon-container">
-                    <img src="./src/assets/octocat-icon.png" width="100px" alt="">
+                    <img 
+                        src="./src/assets/octocat-icon.png"
+                        id="avatar" 
+                        width="100px" 
+                        alt="avatar">
                 </div>
 
                 <div class="profile-details">
                     <div class="details">
-                        <h1 class="nickname">The Octocat</h1>
+                        <h2 class="nickname">The Octocat</h2>
                         <p class="name">@octocat</p>
                     </div>
 
-                    <p class="date-joined">joined 25 jan 2011</p>
+                    <p class="date-joined">joined 01-2022</p>
                 </div>
             </div>
 
             <div class="bio">
-                <p>
+                <p id="bio-text">
                     This profile has no bio
                 </p>
             </div>
@@ -68,38 +72,39 @@
             <div class="profile-data">
                 <div class="data">
                     <h3>Repos</h3>
-                    <p>8</p>
+                    <p id="total-repos">0</p>
                 </div>
                 <div class="data">
                     <h3>Followers</h3>
-                    <p>3838</p>
+                    <p id="total-followers">0</p>
                 </div>
                 <div class="data">
                     <h3>Following</h3>
-                    <p>9</p>
+                    <p id="total-following">0</p>
                 </div>
             </div>
 
             <div class="links">
                 <div class="link">
                     <img src="./src/assets/location-dot-solid.svg" width="20px" alt="location">
-                    <a href="#">San Francisco</a>
+                    <a id="location" href="#">Location</a>
                 </div>
                 <div class="link">
-                    <img src="./src/assets/twitter.svg" width="20px" alt="location">
-                    <a href="#">Twitter</a>
+                    <img src="./src/assets/twitter.svg" width="20px" alt="twitter">
+                    <a id="twitter_username" href="#">twitter user</a>
                 </div>
                 <div class="link">
-                    <img src="./src/assets/link-solid.svg" width="20px" alt="location">
-                    <a href="#">Not Available</a>
+                    <img src="./src/assets/link-solid.svg" width="20px" alt="blog">
+                    <a id="blog-link" href="#">blog link</a>
                 </div>
                 <div class="link">
-                    <img src="./src/assets/building-solid.svg" width="20px" alt="location">
-                    <a href="#">@github</a>
+                    <img src="./src/assets/building-solid.svg" width="20px" alt="company">
+                    <a id="company" href="#">@Company</a>
                 </div>
             </div>
         </div>
     </main>
     
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
