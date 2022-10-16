@@ -116,6 +116,7 @@ form .submit-btn:hover {
 }
 
 .content .profile-info .icon-container img {
+    width: 100px;
     border-radius: 50px;
 }
 
