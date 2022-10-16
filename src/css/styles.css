@@ -7,11 +7,12 @@ body {
     background-color: #001c40;
     color: #fff;
     font-family: 'Lora', serif;
+ 
 }
 
 main {
     width: 50%;
-    min-width: 400px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +50,7 @@ form .input-dev {
     color: #fff;
 
     border: none;
+    border-radius: 10px;
     outline: none;
 }
 
@@ -104,8 +106,8 @@ form .submit-btn:hover {
 }
 
 .content .profile-info .icon-container {
-    width: 92px;
-    height: 92px;
+    width: 100px;
+    height: 100px;
     background-color: #fff;
     border-radius: 50px;
     display: flex;
@@ -113,28 +115,38 @@ form .submit-btn:hover {
     justify-content: center;
 }
 
+.content .profile-info .icon-container img {
+    border-radius: 50px;
+}
+
 .content .bio {
     padding: 20px;
     height: 90px;
-    margin-top: 10px;
+    margin: 10px 0;
     overflow-y: auto;
 }
 
 .content .profile-data {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 40px;
+    row-gap: 20px;
     border-radius: 10px;
     padding: 20px;
     background-color: #001c40;
-    font-size: 20px;
+}
+
+.content .profile-data .data {
+    font-size: 18px;
 }
 
 .content .links{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     gap: 10px;
     margin-top: 20px;
 }
