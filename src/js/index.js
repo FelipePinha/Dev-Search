@@ -21,6 +21,12 @@ async function getGithubUser(inputValue) {
 }
 
 function insertUserDataOnPage(data) {
+    profileDetails(data)
+    profileData(data)
+    links(data)
+}
+
+function profileDetails(data) {
     const avatar = document.querySelector('#avatar')
     avatar.src = data.avatar_url
 
@@ -36,7 +42,9 @@ function insertUserDataOnPage(data) {
 
     const bio = document.querySelector('#bio-text')
     bio.textContent = data.bio === null ? 'this profile has no bio' : data.bio
+}
 
+function profileData(data) {
     const totalRepos = document.querySelector('#total-repos')
     const totalFollowers = document.querySelector('#total-followers')
     const totalFollowing = document.querySelector('#total-following')
@@ -44,7 +52,9 @@ function insertUserDataOnPage(data) {
     totalRepos.textContent = data.public_repos
     totalFollowers.textContent = data.followers
     totalFollowing.textContent = data.following
+}
 
+function links(data) {
     const location = document.querySelector('#location')
     const twitterUser = document.querySelector('#twitter_username')
     const blog = document.querySelector('#blog-link')
