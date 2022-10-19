@@ -1,11 +1,20 @@
+:root {
+    --background-dark: #121212;
+    --content-dark: #333;
+    --text-dark: #f3f3f3;
+    --background-light: #E5E4E2;
+    --content-light: #fff;
+    --text-light: #111;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: #001c40;
-    color: #fff;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
     font-family: 'Lora', serif;
  
 }
@@ -31,6 +40,13 @@ header .theme {
     align-items: center;
     column-gap: 8px;
 }
+header .theme .theme-title,i {
+    cursor: pointer;
+}
+
+header .theme .theme-checkbox {
+    display: none;
+}
 
 form {
     width: 100%;
@@ -38,7 +54,7 @@ form {
 
 form .input-dev-container {
     position: relative;
-    background-color: #29457E;
+    background-color: var(--content-dark);
     border-radius: 10px;
 }
 
@@ -47,7 +63,7 @@ form .input-dev {
     height: 100%;
     padding: 20px 50px;
     background: transparent;
-    color: #fff;
+    color: var(--text-dark);
 
     border: none;
     border-radius: 10px;
@@ -55,7 +71,10 @@ form .input-dev {
 }
 
 form .input-dev::placeholder {
-    color: #fff;
+    color: var(--text-dark);
+}
+.placeholder-light::placeholder {
+    color: var(--text-light);
 }
 
 form img {
@@ -72,8 +91,8 @@ form .submit-btn {
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
-    color: #fff;
-    background-color: #0275d8;
+    color: var(--background-dark);
+    background-color: var(--text-dark);
     cursor: pointer;
     transition: opacity .3s ease-in-out;
 }
@@ -86,7 +105,7 @@ form .submit-btn:hover {
 .content {
     width: 100%;
     margin-top: 20px;
-    background-color: #29457E;
+    background-color: var(--content-dark);
 
     border-radius: 10px;
     padding: 20px;
@@ -108,7 +127,7 @@ form .submit-btn:hover {
 .content .profile-info .icon-container {
     width: 100px;
     height: 100px;
-    background-color: #fff;
+    background-color: var(--text-dark);
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -136,7 +155,7 @@ form .submit-btn:hover {
     row-gap: 20px;
     border-radius: 10px;
     padding: 20px;
-    background-color: #001c40;
+    background-color: var(--background-dark);
 }
 
 .content .profile-data .data {
@@ -159,5 +178,5 @@ form .submit-btn:hover {
 }
 
 .content .links .link a {
-    color: #fff;
+    color: var(--text-dark);
 }

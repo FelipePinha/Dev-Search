@@ -17,11 +17,15 @@
 <body>
     
     <main>
-        <header>
+        <header id="header">
             <h1 class="app-title">devfinder</h1>
             <div class="theme">
-                <strong class="theme-title">LIGHT</strong>
-                <i class="fas fa-solid fa-sun"></i>
+                <label id="label" for="theme-checkbox">
+                    <strong class="theme-title">LIGHT</strong>
+                    <i id="light" class="fas fa-solid fa-sun"></i>
+                    <i id="dark" class="fas fa-solid fa-moon"></i>
+                </label>
+                <input type="checkbox" name="theme-checkbox" class="theme-checkbox">
             </div>
         </header>
 
@@ -86,24 +90,25 @@
             <div class="links">
                 <div class="link">
                     <img src="./src/assets/location-dot-solid.svg" width="20px" alt="location">
-                    <a id="location" href="#">Location</a>
+                    <a class="link-text" id="location" href="#">Location</a>
                 </div>
                 <div class="link">
                     <img src="./src/assets/twitter.svg" width="20px" alt="twitter">
-                    <a id="twitter_username" href="#">twitter user</a>
+                    <a class="link-text" id="twitter_username" href="#">twitter user</a>
                 </div>
                 <div class="link">
                     <img src="./src/assets/link-solid.svg" width="20px" alt="blog">
-                    <a id="blog-link" href="#">blog link</a>
+                    <a class="link-text" id="blog-link" href="#">blog link</a>
                 </div>
                 <div class="link">
                     <img src="./src/assets/building-solid.svg" width="20px" alt="company">
-                    <a id="company" href="#">@Company</a>
+                    <a class="link-text" id="company" href="#">@Company</a>
                 </div>
             </div>
         </div>
     </main>
     
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/pageTheme.js"></script>
 </body>
 </html>
